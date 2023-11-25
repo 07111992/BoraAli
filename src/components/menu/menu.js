@@ -19,6 +19,10 @@ export default function Menu() {
           <li>
             <Link to="/QuemSomos">Quem Somos</Link>
           </li>
+          <li>
+            <Link to="/LoginCadastro">Login/Cadastro</Link>
+          </li>
+
         </ul>
       </nav>
     </div>
