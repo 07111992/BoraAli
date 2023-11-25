@@ -1,0 +1,60 @@
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10vh;
+    align-items: center;
+    margin-top: 14vh;
+}
+
+/* main .logo_boraali{
+    width: 100px;
+    height: auto;
+    margin-top: 10vh;
+} */
+
+.card_participantes .img_participantes{
+  width: 150px;
+  height: 150px;
+  border-radius: 300px;
+  box-shadow: 0px 0px 6px black;
+  margin: 0;
+}
+
+.card_participantes{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+}
+
+.card_participantes p{
+    font-family: 'Libre Franklin', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+
+.container_participantes{
+    position: relative;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.redes_sociais img{
+    width: 44px;
+    height: auto;
+
+}
+
+.redes_sociais{
+    display: flex;
+    gap: 4vh;
+}
