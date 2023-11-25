@@ -1,17 +1,38 @@
 footer{
     width: 100%;
     height: 50px;
-    background-color: rgb(37, 36, 36);
+    /* background-color: rgb(37, 36, 36); */
+    background-color: #223D83;;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     padding-left: 0px;
     padding: 0px;
   }
   
   footer p{
     color: white;
-    text-align: center;
+    text-align: end;
     padding: 10px ;
   }
+
+  .div_p{
+    width: 67vw;
+  }
+
+  .contanier_redes_sociais{
+    width: 33vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+
+  .contanier_redes_sociais a img{
+    width: 32px;
+    height: 32px;
+  }
+  
+
   

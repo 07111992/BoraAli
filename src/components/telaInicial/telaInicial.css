@@ -137,83 +137,6 @@
     font-size: 12px;
   }
   
-  
-  .section_contatos{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    background-color: #223D83;
-    margin-top: 100px;
-  
-  }
-  
-  
-  .nome_contato h1{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: white;
-    margin-top: 40px;
-  
-    font-size: 30px;
-    margin-left: 58px;
-  }    
-  
-  .contanier_icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20%;
-    margin-top: 3%;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 200px;
-  }
-  
-  
-  .icons_contato span{
-    text-align: center;
-    margin-top: 20px;
-    background-color: #223D83;
-    color: white;
-    width: 100%;
-  }
-  
-  
-  .icons_contato{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    text-align: justify;
-  }
-  
-  .contanier_icons .icons_contato img{
-    width: 60px;
-    height: 60px;
-  }
-  
-  .contanier_redes_sociais{
-    margin-left: 0px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 10px;
-    margin-right: 0px;
-    background-color: #F4F4F4;
-   
-  }
-  
-  .contanier_redes_sociais a img{
-    width: 34px;
-    height: 34px;
-  }
-  
-  
-
 
 .detalhesDescricao{
     display: flex;
@@ -300,6 +223,8 @@
   .contanierFotoLateral img{
     height: 100%;
     width: 480px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 60px;
   }
   
   .container_historia_recife{
@@ -321,62 +246,60 @@
     color: #646464;
   }
 
+  /* section contatos */
+
   .section_contatos{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: auto;
-    background-color: #223D83;
-    margin-top: 100px;
-  
+    height: 30vh;
+    background-color: rgba(233, 209, 75, 0.719);
+    margin-top: 8%;
   }
   
-  
+
   .nome_contato h1{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    color: white;
-    margin-top: 40px;
-  
+    color: black;
     font-size: 30px;
-    margin-left: 58px;
   }    
-  
+    
   .contanier_icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20%;
-    margin-top: 3%;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 200px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10%;
   }
   
   
   .icons_contato span{
-    text-align: center;
-    margin-top: 20px;
-    background-color: #223D83;
-    color: white;
-    width: 100%;
+      font-size: 15px;
+      text-align: left;
   }
   
   
   .icons_contato{
     display: flex;
     flex-direction: column;
+    width: 300px;
+    height: auto;
     align-items: center;
-    height: 100%;
-    text-align: justify;
+
   }
   
-  .contanier_icons .icons_contato img{
-    width: 60px;
-    height: 60px;
+.icons_contato img{
+    width: 50px;
+    height: 50px;
+    text-align: center;
   }
+  
 
+ 
 
   @media screen and (max-width: 400px) {
     
