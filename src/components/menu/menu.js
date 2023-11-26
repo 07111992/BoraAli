@@ -8,7 +8,10 @@ export default function Menu() {
       <nav className="nav">
         <ul>
           <li>
-            <div className="contanier_logo">{/* <img src="" alt=""> */}</div>
+            <div className="contanier_logo">
+              {" "}
+              Bora ali{/* <img src={} alt=""/>*/}
+            </div>
           </li>
           <li>
             <Link to="/">Inicio</Link>
@@ -20,9 +23,10 @@ export default function Menu() {
             <Link to="/QuemSomos">Quem Somos</Link>
           </li>
           <li>
-            <Link to="/LoginCadastro">Login/Cadastro</Link>
+            <Link id="botaoLogin" to="/LoginCadastro">
+              <span>Login/Cadastro</span>
+            </Link>
           </li>
-
         </ul>
       </nav>
     </div>

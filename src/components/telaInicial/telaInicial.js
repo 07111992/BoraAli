@@ -38,9 +38,9 @@ export default function TeleInicial() {
             </h1>
             <p id="frase_2">Recife</p>
 
-            <Link to="/Passeios">
+            <Link id="botao_bora" to="/Passeios">
               <div class="botao_bora">
-                <span>Bora Ali</span>
+                <span>Bora Ali ?</span>
               </div>
             </Link>
           </div>
