@@ -1,8 +1,10 @@
+@import '../../colors.css';
+
 footer{
     width: 100%;
     height: 50px;
     /* background-color: rgb(37, 36, 36); */
-    background-color: #223D83;;
+    background-color: var(--azul);
     display: flex;
     flex-direction: row;
     padding-left: 0px;
