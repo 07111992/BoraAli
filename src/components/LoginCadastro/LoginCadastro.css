@@ -29,7 +29,7 @@
 .box-master button {
 	border-radius: 20px;
 	border: 1px solid #552bff;
-	background-color: #3d2bff;
+	background-color:var(--azul);
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -53,7 +53,7 @@
 }
 
 .box-master form {
-	background-color: #FFFFFF;
+	background-color:var(--branco);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -64,7 +64,7 @@
 }
 
 .box-master input {
-	background-color: #eee;
+	background-color:var(--branco);
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
@@ -72,7 +72,7 @@
 }
 
 .box-master .container {
-	background-color: #fff;
+	background-color: var(--branco);
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -142,8 +142,8 @@
 }
 
 .box-master .overlay {
-	background: #5a41ff;
-	background: -webkit-linear-gradient(to right, #4e2bff, #5a41ff);
+	background: var(--azul);
+	background: var(--azul);
 	background: linear-gradient(to right, #522bff, #4b41ff);
 	background-repeat: no-repeat;
 	background-size: cover;
