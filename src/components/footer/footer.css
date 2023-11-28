@@ -3,12 +3,12 @@
 footer {
   width: 100%;
   height: 50px;
-  /* background-color: rgb(37, 36, 36); */
-  background-color: var(--azul);
   display: flex;
   flex-direction: row;
   padding-left: 0px;
   padding: 0px;
+  margin-bottom: 0px;
+  background-color: #223d83;
 }
 
 footer p {
@@ -22,10 +22,10 @@ footer p {
 }
 
 .contanier_redes_sociais {
-  width: 33vw;
+  width: 25vw;
   flex-direction: row;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 20px;
   margin-top: 10px;
   margin-right: 0px;
