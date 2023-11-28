@@ -79,7 +79,7 @@ main {
 }
 
 .quadrado {
-  background-color: white;
+  background-color: rgba(250, 247, 247, 0.918);
   width: 200px;
   display: flex;
   gap: 1.4vh;
@@ -90,7 +90,7 @@ main {
   position: relative;
   top: -28px;
   left: 7px;
-  border-bottom: solid 1px black;
+  /* border-bottom: solid 1px black; */
 }
 
 .redes_sociais {
