@@ -5,7 +5,6 @@ nav {
   align-items: center;
   justify-content: row;
   padding: 10px 4%;
-  gap: 20%;
   /* top: 0;
    left: 0;
    transition: .5s;
@@ -19,10 +18,11 @@ ul {
   flex-direction: row;
   justify-content: flex-end;
   gap: 120px;
-  width: 90%;
+  width: 80%;
+  align-items: center;
 }
 
-nav a {
+nav #linkMenu {
   text-decoration: none;
   color: rgb(224, 216, 216);
   font-size: 18px;
@@ -31,7 +31,7 @@ nav a {
   transition: all 1s;
 }
 
-.nav a:hover {
+.nav #linkMenu:hover {
   color: white;
 }
 
@@ -44,6 +44,7 @@ li {
   padding: 4px;
   border-radius: 6px;
   background-color: rgb(224, 216, 216);
+  text-decoration: none;
 }
 
 #botaoLogin span {
@@ -60,4 +61,19 @@ li {
 
 #botaoLogin span:hover {
   color: #022a8d;
+}
+
+.contanier_logo img {
+  width: auto;
+  height: 44px;
+  margin: 0;
+}
+
+.contanier_logo {
+  width: 10%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
