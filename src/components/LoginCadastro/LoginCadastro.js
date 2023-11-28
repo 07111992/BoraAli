@@ -10,7 +10,7 @@ export default function LoginCadastro() {
             <h2>BEM VINDO AMORZINHO</h2>
 
             <div
-                className={`container ${isSignUpActive ? "right-panel-active" : ""}`}
+                className={`container ${isSignUpActive ? "right-painel-active" : ""}`}
             >
                 <div className="form-container sign-up-container">
                     <form action="#">
@@ -60,9 +60,9 @@ export default function LoginCadastro() {
                     </form>
                 </div>
 
-                <div className="overlay-container">
-                    <div className="overlay">
-                        <div className="overlay-panel overlay-left">
+                <div className="sobreposição-container">
+                    <div className="sobreposição">
+                        <div className="sobreposição-painel sobreposição-left">
                             <h1>Se já for cadastrado, vem cá.</h1>
                             <p>Informe seus dados de usuário.</p>
                             <button
@@ -76,7 +76,7 @@ export default function LoginCadastro() {
                             </button>
                         </div>
 
-                        <div className="overlay-panel overlay-right">
+                        <div className="sobreposição-painel sobreposição-right">
                             <h1>Bora ali?</h1>
                             <p>Por aqui pra se tornar um usuário.</p>
                             <button
