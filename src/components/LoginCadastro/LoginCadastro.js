@@ -18,30 +18,39 @@ export default function LoginCadastro() {
           <div className="first-column">
             <h2 className="title title-primary">welcome back!</h2>
             <p className="description description-primary">
-              To keep connected with us
+              Para se manter conectado
             </p>
             <p className="description description-primary">
-              please login with your personal info
+              Por favor faça login
             </p>
             <button onClick={Signin} id="signin" className="btn btn-primary">
-              sign in
+              Entrar
             </button>
           </div>
           <div className="second-column">
-            <h2 className="title title-second">create account</h2>
+            <h2 className="title title-second">Criar uma conta</h2>
             <div className="social-media">
               <ul className="list-social-media">
-                <a className="link-social-media" href="#">
+                <a
+                  className="link-social-media"
+                  href="https://icons8.com.br/icon/59780/facebook"
+                >
                   <li className="item-social-media">
                     <i className="fab fa-facebook-f"></i>
                   </li>
                 </a>
-                <a className="link-social-media" href="#">
+                <a
+                  className="link-social-media"
+                  href="https://icons8.com.br/icon/59780/facebook"
+                >
                   <li className="item-social-media">
                     <i className="fab fa-google-plus-g"></i>
                   </li>
                 </a>
-                <a className="link-social-media" href="#">
+                <a
+                  className="link-social-media"
+                  href="https://icons8.com.br/icon/59780/facebook"
+                >
                   <li className="item-social-media">
                     <i className="fab fa-linkedin-in"></i>
                   </li>
@@ -49,7 +58,7 @@ export default function LoginCadastro() {
               </ul>
             </div>
             <p className="description description-second">
-              or use your email for registration:
+              Ou use seu e-mail para inscrição:
             </p>
             <form className="form">
               <label className="label-input" for="">
@@ -67,33 +76,36 @@ export default function LoginCadastro() {
                 <input type="password" placeholder="Password" />
               </label>
 
-              <button className="btn btn-second">sign up</button>
+              <button className="btn btn-second">Inscrever-se</button>
             </form>
           </div>
         </div>
         <div className="content second-content">
           <div className="first-column">
-            <h2 className="title title-primary">hello, friend!</h2>
+            <h2 className="title title-primary">Olá amigo!</h2>
             <p className="description description-primary">
-              Enter your personal details
+              Insira seus dados pessoais
             </p>
             <p className="description description-primary">
-              and start journey with us
+              E comece a jornada conosco
             </p>
             <button onClick={Signup} id="signup" className="btn btn-primary">
-              sign up
+              Inscrever-se
             </button>
           </div>
           <div className="second-column">
-            <h2 className="title title-second">sign in to developer</h2>
+            <h2 className="title title-second">Faça login no desenvolvedor</h2>
             <div className="social-media">
               <ul className="list-social-media">
-                <a className="link-social-media" href="#">
+                <a
+                  className="link-social-media"
+                  href="https://icons8.com.br/icon/59780/facebook"
+                >
                   <li className="item-social-media">
                     <i className="fab fa-facebook-f"></i>
                   </li>
                 </a>
-                <a className="link-social-media" href="#">
+                <a className="link-social-media" href="">
                   <li className="item-social-media">
                     <i className="fab fa-google-plus-g"></i>
                   </li>

@@ -32,9 +32,11 @@ export default function TeleInicial() {
           <div class="carousel-item">
             <img src={imgCarousel3} class="d-block w-100" alt="..." />
           </div>
-          <div class="frase_carousel">
+          <div className="frase_carousel">
             <h1 id="frase_1">
-              <span>Venha conhecer o melhor do</span>
+              <span>
+                Venha conhecer <span id="spanNone">o melhor do</span>
+              </span>
             </h1>
             <p id="frase_2">Recife</p>
 
