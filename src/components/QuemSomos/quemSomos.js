@@ -3,7 +3,7 @@ import "./QuemSomos.css";
 import Isis from "../../img/isis.jpg";
 import Linkedin from "../../img/linkedinBlack.png";
 import GitHub from "../../img/gitBlack.png";
-import Italo from "../../img/foto_prof.jpg";
+import GustavoLindo from "../../img/gustavoLindo.PNG";
 import Douglas from "../../img/douglas.jpg";
 import Eliel from "../../img/foto eliel.jpg";
 import ItaloAtor from "../../img/italoAtor.jpg";
@@ -37,7 +37,7 @@ export default function QuemSomos() {
           </div>
         </div>
         <div className="card_participantes">
-          <img className="img_participantes" src={Italo} alt="" />
+          <img className="img_participantes" src={GustavoLindo} alt="" />
           <div className="quadrado">
             <p>Gustavo Miranda</p>
             <p className="dev">Desenvolvedor</p>

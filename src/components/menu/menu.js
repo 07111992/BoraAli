@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import logoImg from "../../img/LOGO_giide.png";
+import logoImg from "../../img/boraalinova2.png";
 
 import "../menu/menu.css";
 
@@ -9,7 +9,9 @@ export default function Menu() {
     <div>
       <nav className="nav">
         <div className="contanier_logo">
-          <img src={logoImg} alt="" />
+          <Link to="/">
+            <img src={logoImg} alt="logo Bora ali" />
+          </Link>
         </div>
         <ul>
           <li>

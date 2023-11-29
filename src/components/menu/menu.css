@@ -4,7 +4,8 @@ nav {
   justify-content: center;
   align-items: center;
   justify-content: row;
-  padding: 10px 4%;
+  /* padding: 10px 4%; */
+  padding: 1% 4%;
   /* top: 0;
    left: 0;
    transition: .5s;
@@ -90,5 +91,16 @@ li {
 
   .contanier_logo {
     display: none;
+  }
+
+  nav {
+    padding: 0% 2%;
+  }
+
+  nav #linkMenu {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 1s;
   }
 }

@@ -11,8 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   background-color: #ecf0f1;
+  margin: 10%;
 }
 .content {
   background-color: #fff;

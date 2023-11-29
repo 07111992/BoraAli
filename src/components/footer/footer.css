@@ -68,4 +68,13 @@ footer p {
     text-align: center;
     padding: 10px;
   }
+
+  .contanier_redes_sociais {
+    padding-bottom: 3%;
+  }
+
+  footer p {
+    margin-top: 5px;
+    margin: 0;
+  }
 }

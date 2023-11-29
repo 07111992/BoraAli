@@ -241,7 +241,7 @@
 }
 
 .container_historia_recife h1 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "Poppins", sans-serif;
   padding: 10px;
   line-height: 1.9;
@@ -342,6 +342,7 @@
     text-align: justify;
     padding: 0;
     margin: 3%;
+    font-size: 1em;
   }
 
   .contanierFotoLateral img {
