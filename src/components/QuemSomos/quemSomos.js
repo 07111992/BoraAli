@@ -11,7 +11,7 @@ import ItaloAtor from "../../img/italoAtor.jpg";
 export default function QuemSomos() {
   return (
     <main>
-      <h1>Nossa Equipe Incrível</h1>
+      <h1 className="equipeh1">Nossa Equipe Incrível</h1>
 
       <div className="container_participantes">
         <div className="card_participantes" id="isis">
