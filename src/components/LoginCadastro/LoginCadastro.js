@@ -1,6 +1,31 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../LoginCadastro/LoginCadastro.css";
 
+import Linkedin from "../../img/linkedinBlack.png";
+
 export default function LoginCadastro() {
+  const [email, setEmail] = useState();
+  const [senha, setSenha] = useState();
+  const [nome, setNome] = useState();
+  const [cadastrarEmail, setCadastrarEmail] = useState();
+  const [cadastrarSenha, setCadastrarSenha] = useState();
+
+  function fazerLogin(e) {
+    console.log(email);
+    console.log(senha);
+
+    e.preventDefault();
+  }
+
+  function cadastrarUsuario(e) {
+    console.log(nome);
+    console.log(cadastrarEmail);
+    console.log(cadastrarSenha);
+
+    e.preventDefault();
+  }
+
   function Signin() {
     var body = document.querySelector("body");
     body.className = "sign-in-js";
@@ -13,10 +38,10 @@ export default function LoginCadastro() {
 
   return (
     <>
-      <div className="container">
+      <div className="containerLogin">
         <div className="content first-content">
           <div className="first-column">
-            <h2 className="title title-primary">welcome back!</h2>
+            <h2 className="title title-primary">Bem vindo de volta!</h2>
             <p className="description description-primary">
               Para se manter conectado
             </p>
@@ -31,30 +56,18 @@ export default function LoginCadastro() {
             <h2 className="title title-second">Criar uma conta</h2>
             <div className="social-media">
               <ul className="list-social-media">
-                <a
-                  className="link-social-media"
-                  href="https://icons8.com.br/icon/59780/facebook"
-                >
-                  <li className="item-social-media">
-                    <i className="fab fa-facebook-f"></i>
+                <Link className="link-social-media" href="">
+                  <li className="">
+                    <img src={Linkedin} alt="" />
+                    {/* <i className="fab fa-google-plus-g"></i> */}
                   </li>
-                </a>
-                <a
-                  className="link-social-media"
-                  href="https://icons8.com.br/icon/59780/facebook"
-                >
-                  <li className="item-social-media">
-                    <i className="fab fa-google-plus-g"></i>
+                </Link>
+                <Link className="link-social-media" href="">
+                  <li className="">
+                    <img src={Linkedin} alt="" />
+                    {/* <i className="fab fa-google-plus-g"></i> */}
                   </li>
-                </a>
-                <a
-                  className="link-social-media"
-                  href="https://icons8.com.br/icon/59780/facebook"
-                >
-                  <li className="item-social-media">
-                    <i className="fab fa-linkedin-in"></i>
-                  </li>
-                </a>
+                </Link>
               </ul>
             </div>
             <p className="description description-second">
@@ -63,20 +76,40 @@ export default function LoginCadastro() {
             <form className="form">
               <label className="label-input" for="">
                 <i className="far fa-user icon-modify"></i>
-                <input type="text" placeholder="Name" />
+                <input
+                  type="text"
+                  placeholder="Nome"
+                  onChange={(e) => {
+                    setNome(e.target.value);
+                  }}
+                />
               </label>
 
               <label className="label-input" for="">
                 <i className="far fa-envelope icon-modify"></i>
-                <input type="email" placeholder="Email" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  onChange={(e) => {
+                    setCadastrarEmail(e.target.value);
+                  }}
+                />
               </label>
 
               <label className="label-input" for="">
                 <i className="fas fa-lock icon-modify"></i>
-                <input type="password" placeholder="Password" />
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  onChange={(e) => {
+                    setCadastrarSenha(e.target.value);
+                  }}
+                />
               </label>
 
-              <button className="btn btn-second">Inscrever-se</button>
+              <button onClick={cadastrarUsuario} className="btn btn-second">
+                Inscrever-se
+              </button>
             </form>
           </div>
         </div>
@@ -97,44 +130,51 @@ export default function LoginCadastro() {
             <h2 className="title title-second">Faça login no desenvolvedor</h2>
             <div className="social-media">
               <ul className="list-social-media">
-                <a
-                  className="link-social-media"
-                  href="https://icons8.com.br/icon/59780/facebook"
-                >
-                  <li className="item-social-media">
-                    <i className="fab fa-facebook-f"></i>
+                <Link className="link-social-media" href="">
+                  <li className="">
+                    <img src={Linkedin} alt="" />
+                    {/* <i className="fab fa-google-plus-g"></i> */}
                   </li>
-                </a>
-                <a className="link-social-media" href="">
-                  <li className="item-social-media">
-                    <i className="fab fa-google-plus-g"></i>
+                </Link>
+                <Link className="link-social-media" href="">
+                  <li className="">
+                    <img src={Linkedin} alt="" />
                   </li>
-                </a>
-                <a className="link-social-media" href="#">
-                  <li className="item-social-media">
-                    <i className="fab fa-linkedin-in"></i>
-                  </li>
-                </a>
+                </Link>
               </ul>
             </div>
             <p className="description description-second">
-              or use your email account:
+              Ou use sua conta de e-mail:
             </p>
             <form className="form">
               <label className="label-input" for="">
                 <i className="far fa-envelope icon-modify"></i>
-                <input type="email" placeholder="Email" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
               </label>
 
               <label className="label-input" for="">
                 <i className="fas fa-lock icon-modify"></i>
-                <input type="password" placeholder="Password" />
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  onChange={(e) => {
+                    setSenha(e.target.value);
+                  }}
+                />
               </label>
 
               <a className="password" href="#">
-                forgot your password?
+                Esqueceu sua senha?
               </a>
-              <button className="btn btn-second">sign in</button>
+              <button onClick={fazerLogin} className="btn btn-second">
+                Entrar
+              </button>
             </form>
           </div>
         </div>
