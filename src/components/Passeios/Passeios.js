@@ -34,7 +34,7 @@ export default function Passeios() {
                 <h1>Rua do Bom Jesus</h1>
                 <p>Um dos principais pontos turísticos de recife, foi eleita a 3ª mais bonita do mundo. Conhecida por seu charme histórico, abriga diversos pontos históricos e arte, atraindo visitantes de todo o mundo.
                 </p>
-                <Link to= "PasseiosDetalhes" ><button className="btn">Saiba Mais!</button></Link>
+                <Link to= "PasseiosDetalhes2" ><button className="btn">Saiba Mais!</button></Link>
             </div>
 
             <div className="card">

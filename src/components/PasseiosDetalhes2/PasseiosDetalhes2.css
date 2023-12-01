@@ -1,20 +1,21 @@
-.marco1 {
+.bomJesus {
     margin-top: -0px;
 }
 
-.containerMarco {
+
+.containerBomJesus {
     width: 100%;
     height: 600px;
 }
 
-.containerMarco img {
+.containerBomJesus img {
     height: 600px;
     width: 100%;
 
 
 }
 
-.containerMarco h1 {
+.containerBomJesus h1 {
     font-size: 100px;
     text-align: center;
     margin-top: -200px;
@@ -23,15 +24,15 @@
     text-shadow: 0.0em 0.1em 0.05em #333333c9
 }
 
-.containerMarco p {
+.containerBomJesus p {
     margin-top: 50px;
 }
 
-.containerTexto {
+.containerTextoBomJesus {
     display: flex;
     flex-direction: column;
     
-    height: 3300px;
+    height: 2900px;
     width: 900px;
     background-color: rgb(255, 255, 255);
     margin-top: 100px;
@@ -41,62 +42,63 @@ font-size: 18px;
 
 }
 
-.title1 {
+.title1_bj {
     font-size: 30px;
     text-decoration: underline;
     font-family: 'Francois One', sans-serif;
 }
 
-.title2 {
+.title2_bj {
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Francois One', sans-serif;
+    margin-top: 18px;
+}
+
+.title3_bj {
     font-size: 30px;
     text-decoration: underline;
     font-family: 'Francois One', sans-serif;
 }
 
-.title3 {
+.title4_bj{
     font-size: 30px;
     text-decoration: underline;
     font-family: 'Francois One', sans-serif;
 }
 
-.title4{
+.title5_bj{
     font-size: 30px;
     text-decoration: underline;
     font-family: 'Francois One', sans-serif;
 }
 
-.title5{
+.title6_bj{
     font-size: 30px;
     text-decoration: underline;
     font-family: 'Francois One', sans-serif;
 }
 
-.title6{
-    font-size: 30px;
-    text-decoration: underline;
-    font-family: 'Francois One', sans-serif;
-}
-
-.containerTexto p {
+.containerTextoBomJesus p {
     margin-top: 20px;
 }
 
-.marcoZeroPage2 {
-    height: 250px;
+.ruaBomJesus2 {
+    height: 450px;
     width: 900px;
     box-shadow: 3px 4px 15px black;
     border-radius: 5px;
 }
 
-.marcoZeroPage3 {
+/* .marcoZeroPage3 {
     width: 100%;
     height: 500px;
     border-radius: 3px;
     margin-bottom: 40px;
     box-shadow: 3px 4px 15px black;
-}
+} */
 
-.marcoZeroPage4{
+.ruaBomJesus3{
     width: 100%;
     height: auto;
     display: flex;
@@ -105,7 +107,10 @@ font-size: 18px;
     
 }
 
-.marcoZeroPage4 img{
+.ruaBomJesus3 img{
     box-shadow: 3px 4px 15px black;
     border-radius: 5px;
+    height: 400px;
 }
+
+

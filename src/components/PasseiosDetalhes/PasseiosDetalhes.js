@@ -6,7 +6,7 @@ import imgMarcoPage4 from "../../img/antigo marco zero.jpg";
 export default function PasseiosDetalhes() {
 
     return <div>
-        <main >
+        <main className="marco1">
             <div className="containerMarco">
 
                 <img src={imgMarcoPage}></img>
@@ -22,7 +22,7 @@ O local fica próximo ao Porto do Recife e abriga o Marco Zero da cidade do Reci
 
     <img className="marcoZeroPage2" src={imgMarcoPage2}></img>
 
-<p>Marco Zero Recife
+<p>
 A Praça Rio Branco, também conhecida como Marco Zero, é um espaço público localizado no bairro do Recife da cidade homônima, capital de Pernambuco.
 
 O local fica próximo ao Porto do Recife e abriga o Marco Zero da cidade do Recife. É deste marco que são feitas todas as medidas oficiais de distâncias rodoviárias locais. Oficialmente denominada de Praça Barão do Rio Branco, fica localizada na Av. Alfredo Lisboa conectada às ruas Marquês de Olinda, Rio Branco e Barbosa Lima.
@@ -34,7 +34,7 @@ Além do Marco Zero, existe na praça um busto do Barão do Rio Branco, escultur
 O norte da praça é banhado pelo estuário do porto do Recife, formado pelo Rio Capibaribe. O estuário é protegido por um dique natural, local em que se encontra o Parque das Esculturas com a famosa obra Coluna de Cristal de 32 metros de altura e inspirada em uma flor descoberta por Burle Marx e varias outras obras em cerâmica do artista Francisco Brennand. No dique encontra-se também a Casa de Banhos, que não existe mais, e o Farol do Recife. O dique tem uma extensão 4km de comprimento e começa no bairro de Brasília Teimosa.</p>
 <img className="marcoZeroPage3" src={imgMarcoPage3}></img>
 
-<h1 className="title2">Marco Zero Recife História
+<h1 className="title2">Marco Zero História
 </h1>
 
 <p>No início do século passado, o centro do Recife passou por drásticas reformas, com projetos de higienização urbana e melhoramento das condições do Porto do Recife. Na prática, a higienização social se traduziu em desapropriações de pelo menos 480 imóveis que foram demolidos para a abertura das três novas avenidas no Bairro.
@@ -46,7 +46,7 @@ Com esta grande reforma, profundas modificações foram feitas no bairro e na pr
 
 <p>Em 1999 a praça que existia no local recebeu severas modificações. O busto do Barão do Rio Branco e o Marco Zero foram realocados para a borda da praça. A “nova praça” foi projetada pelo pintor Cícero Dias, em 1999. No seu centro se encontra uma enorme obra de arte feita por ele. Inspirado em sua obra Eu vi o mundo e ele começava no Recife, criou um grande circulo com uma Rosa dos Ventos no centro. A obra tem em média 10m de raio. Atualmente serve como ponto de encontro de jovens, desportistas, artistas, turistas e moradores da cidade. Além de ser palco de comemorações e apresentações artísticas.</p>
 
-<h1 className="title3">Marco Zero Recife Restaurantes</h1>
+<h1 className="title3">Marco Zero Restaurantes</h1>
 <p>• Em volta de toda Praça Rio Branco você encontra diversidade restaurantes que certamente agradará a todos os gostos.</p>
 
 <h1 className="title4">Horário de Funcionamento Marco Zero em Recife</h1>

@@ -8,6 +8,7 @@ import Footer from "./components/footer/footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import LoginCadastro from './components/LoginCadastro/LoginCadastro';
 import PasseiosDetalhes from './components/PasseiosDetalhes/PasseiosDetalhes'
+import PasseiosDetalhes2 from './components/PasseiosDetalhes2/PasseiosDetalhes2'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Route path="/QuemSomos" element={<QuemSomos />} />
               <Route path="/LoginCadastro" element={<LoginCadastro />} />
               <Route path="/Passeios/PasseiosDetalhes" element={<PasseiosDetalhes />} />
+              <Route path="/Passeios/PasseiosDetalhes2" element={<PasseiosDetalhes2 />} />
           </Routes>  
           <Footer/>
       </Router> 
