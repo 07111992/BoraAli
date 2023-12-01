@@ -11,17 +11,25 @@ export default function LoginCadastro() {
   const [nome, setNome] = useState("");
   const [cadastrarEmail, setCadastrarEmail] = useState("");
   const [cadastrarSenha, setCadastrarSenha] = useState("");
+  // avisos
+  const [avisoEmail, setAvisoEmail] = useState("");
+  const [avisoSenha, setAvisoSenha] = useState("");
+
+  const [avisoCadastrarNome, setAvisoCadastrarNome] = useState("");
+  const [avisoCadastrarEmail, setAvisoCadastrarEmail] = useState("");
+  const [avisoCadastrarSenha, setAvisoCadastrarSenha] = useState("");
   const navegar = useNavigate();
 
   function fazerLogin(e) {
     if (email === "" && senha === "") {
-      console.log("Digite uma senha valida e um email valido");
+      setAvisoEmail("*O e-mail precisa ser preenchido");
+      setAvisoSenha("*A senha precisa ser preenchida");
       e.preventDefault();
     } else if (email === "") {
-      console.log("Digite uma email valido");
+      setAvisoEmail("*O e-mail precisa ser preenchido");
       e.preventDefault();
     } else if (senha === "") {
-      console.log("Digite uma senha valida");
+      setAvisoSenha("*A senha precisa ser preenchida");
       e.preventDefault();
     } else {
       return navegar("/");
@@ -30,14 +38,19 @@ export default function LoginCadastro() {
 
   function cadastrarUsuario(e) {
     if (nome === "" && cadastrarEmail === "" && cadastrarSenha === "") {
-      console.log("Os campos precisam esta preenchidos");
+      setAvisoCadastrarNome("*O campo precisa ser preenchido ");
+      setAvisoCadastrarEmail("*O campo precisa ser preenchido ");
+      setAvisoCadastrarSenha("*O campo precisa ser preenchido ");
       e.preventDefault();
     } else if (nome === "" || cadastrarEmail === "" || cadastrarSenha === "") {
-      console.log("Os campos precisam esta preenchidos");
+      setAvisoCadastrarNome("*O campo precisa ser preenchido ");
+      setAvisoCadastrarEmail("*O campo precisa ser preenchido ");
+      setAvisoCadastrarSenha("*O campo precisa ser preenchido ");
       e.preventDefault();
     } else if (cadastrarEmail === "") {
       console.log("O campo email precisa esta preenchido");
       e.preventDefault();
+      return;
     } else if (cadastrarSenha === "") {
       console.log("O campo senha e precisa esta preenchido");
       e.preventDefault();
@@ -107,7 +120,7 @@ export default function LoginCadastro() {
                   }}
                 />
               </label>
-
+              <span id="teste123">{avisoCadastrarNome}</span>
               <label className="label-input" for="">
                 <i className="far fa-envelope icon-modify"></i>
                 <input
@@ -118,7 +131,7 @@ export default function LoginCadastro() {
                   }}
                 />
               </label>
-
+              <span id="teste123">{avisoCadastrarEmail}</span>
               <label className="label-input" for="">
                 <i className="fas fa-lock icon-modify"></i>
                 <input
@@ -129,7 +142,7 @@ export default function LoginCadastro() {
                   }}
                 />
               </label>
-
+              <span id="teste123">{avisoCadastrarSenha}</span>
               <button onClick={cadastrarUsuario} className="btn btn-second">
                 Inscrever-se
               </button>
@@ -170,6 +183,7 @@ export default function LoginCadastro() {
               Ou use sua conta de e-mail:
             </p>
             <form className="form">
+              <span id="teste123">{avisoEmail}</span>
               <label className="label-input" for="">
                 <i className="far fa-envelope icon-modify"></i>
                 <input
@@ -180,7 +194,7 @@ export default function LoginCadastro() {
                   }}
                 />
               </label>
-
+              <span id="teste123">{avisoSenha}</span>
               <label className="label-input" for="">
                 <i className="fas fa-lock icon-modify"></i>
                 <input
@@ -191,7 +205,6 @@ export default function LoginCadastro() {
                   }}
                 />
               </label>
-
               <a className="password" href="#">
                 Esqueceu sua senha?
               </a>
