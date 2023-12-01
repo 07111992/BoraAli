@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import LoginCadastro from './components/LoginCadastro/LoginCadastro';
 import PasseiosDetalhes from './components/PasseiosDetalhes/PasseiosDetalhes'
 import PasseiosDetalhes2 from './components/PasseiosDetalhes2/PasseiosDetalhes2'
+import PasseiosDetalhes3 from './components/PasseiosDetalhes3/PasseiosDetalhes3'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/LoginCadastro" element={<LoginCadastro />} />
               <Route path="/Passeios/PasseiosDetalhes" element={<PasseiosDetalhes />} />
               <Route path="/Passeios/PasseiosDetalhes2" element={<PasseiosDetalhes2 />} />
+              <Route path="/Passeios/PasseiosDetalhes3" element={<PasseiosDetalhes3 />} />
           </Routes>  
           <Footer/>
       </Router> 

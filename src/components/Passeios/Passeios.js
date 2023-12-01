@@ -42,7 +42,7 @@ export default function Passeios() {
                 <h1>Paço do Frevo</h1>
                 <p>Espaço cultural que celebra a história e a cultura do frevo. Com arquitetura moderna e atividades diversificadas, o Paço do Frevo se tornou um ponto de referência para os admiradores e estudiosos desse patrimônio cultural.
                 </p>
-                <Link to= "PasseiosDetalhes" ><button className="btn">Saiba Mais!</button></Link>
+                <Link to= "PasseiosDetalhes3" ><button className="btn">Saiba Mais!</button></Link>
             </div>
 
 
