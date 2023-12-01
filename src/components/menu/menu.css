@@ -42,7 +42,7 @@ li {
 }
 
 #botaoLogin {
-  padding: 4px;
+  padding: 6px 16px;
   border-radius: 6px;
   background-color: rgb(224, 216, 216);
   text-decoration: none;

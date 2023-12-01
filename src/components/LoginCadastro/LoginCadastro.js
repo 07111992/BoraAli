@@ -1,29 +1,52 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../LoginCadastro/LoginCadastro.css";
 
-import Linkedin from "../../img/linkedinBlack.png";
+import iconFace from "../../img/iconFaceAzul.png";
+import iconGoogle from "../../img/iconGoogleAzul.png";
 
 export default function LoginCadastro() {
-  const [email, setEmail] = useState();
-  const [senha, setSenha] = useState();
-  const [nome, setNome] = useState();
-  const [cadastrarEmail, setCadastrarEmail] = useState();
-  const [cadastrarSenha, setCadastrarSenha] = useState();
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [nome, setNome] = useState("");
+  const [cadastrarEmail, setCadastrarEmail] = useState("");
+  const [cadastrarSenha, setCadastrarSenha] = useState("");
+  const navegar = useNavigate();
 
   function fazerLogin(e) {
-    console.log(email);
-    console.log(senha);
-
-    e.preventDefault();
+    if (email === "" && senha === "") {
+      console.log("Digite uma senha valida e um email valido");
+      e.preventDefault();
+    } else if (email === "") {
+      console.log("Digite uma email valido");
+      e.preventDefault();
+    } else if (senha === "") {
+      console.log("Digite uma senha valida");
+      e.preventDefault();
+    } else {
+      return navegar("/");
+    }
   }
 
   function cadastrarUsuario(e) {
-    console.log(nome);
-    console.log(cadastrarEmail);
-    console.log(cadastrarSenha);
-
-    e.preventDefault();
+    if (nome === "" && cadastrarEmail === "" && cadastrarSenha === "") {
+      console.log("Os campos precisam esta preenchidos");
+      e.preventDefault();
+    } else if (nome === "" || cadastrarEmail === "" || cadastrarSenha === "") {
+      console.log("Os campos precisam esta preenchidos");
+      e.preventDefault();
+    } else if (cadastrarEmail === "") {
+      console.log("O campo email precisa esta preenchido");
+      e.preventDefault();
+    } else if (cadastrarSenha === "") {
+      console.log("O campo senha e precisa esta preenchido");
+      e.preventDefault();
+    } else if (nome === "") {
+      console.log("O campo nome presisa esta preencido");
+      e.preventDefault();
+    } else {
+      return navegar("/");
+    }
   }
 
   function Signin() {
@@ -58,13 +81,13 @@ export default function LoginCadastro() {
               <ul className="list-social-media">
                 <Link className="link-social-media" href="">
                   <li className="">
-                    <img src={Linkedin} alt="" />
+                    <img id="iconGo" src={iconGoogle} alt="" />
                     {/* <i className="fab fa-google-plus-g"></i> */}
                   </li>
                 </Link>
                 <Link className="link-social-media" href="">
                   <li className="">
-                    <img src={Linkedin} alt="" />
+                    <img id="iconGo" src={iconFace} alt="" />
                     {/* <i className="fab fa-google-plus-g"></i> */}
                   </li>
                 </Link>
@@ -127,18 +150,18 @@ export default function LoginCadastro() {
             </button>
           </div>
           <div className="second-column">
-            <h2 className="title title-second">Faça login no desenvolvedor</h2>
+            <h2 className="title title-second">Faça login</h2>
             <div className="social-media">
               <ul className="list-social-media">
                 <Link className="link-social-media" href="">
                   <li className="">
-                    <img src={Linkedin} alt="" />
+                    <img id="iconGo" src={iconGoogle} alt="" />
                     {/* <i className="fab fa-google-plus-g"></i> */}
                   </li>
                 </Link>
                 <Link className="link-social-media" href="">
                   <li className="">
-                    <img src={Linkedin} alt="" />
+                    <img id="iconGo" src={iconFace} alt="" />
                   </li>
                 </Link>
               </ul>

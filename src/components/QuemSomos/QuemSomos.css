@@ -10,7 +10,8 @@ main {
   gap: 6vh;
   align-items: center;
   margin-top: 14vh;
-  margin-bottom: 4vh;
+  margin-top: 20%;
+  margin-bottom: 12%;
 }
 
 /* main .logo_boraali{
@@ -43,7 +44,8 @@ main {
 } */
 
 .equipeh1 {
-  font-family: 'Francois One', sans-serif;
+  font-family: "Francois One", sans-serif;
+  margin-top: 6%;
 }
 
 .card_participantes p {
