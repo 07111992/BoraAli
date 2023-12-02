@@ -4,6 +4,8 @@ import "../LoginCadastro/LoginCadastro.css";
 
 import iconFace from "../../img/iconFaceAzul.png";
 import iconGoogle from "../../img/iconGoogleAzul.png";
+import axios from "axios";
+import { async } from "q";
 
 export default function LoginCadastro() {
   const [email, setEmail] = useState("");
@@ -20,7 +22,12 @@ export default function LoginCadastro() {
   const [avisoCadastrarSenha, setAvisoCadastrarSenha] = useState("");
   const navegar = useNavigate();
 
-  function fazerLogin(e) {
+  const [redirecionar, setRedirecionar] = useState("");
+
+  // funcao para cadastrar
+  function cadastrarUsuario() {}
+
+  async function fazerLogin(e) {
     if (email === "" && senha === "") {
       setAvisoEmail("*O e-mail precisa ser preenchido");
       setAvisoSenha("*A senha precisa ser preenchida");
@@ -32,7 +39,20 @@ export default function LoginCadastro() {
       setAvisoSenha("*A senha precisa ser preenchida");
       e.preventDefault();
     } else {
-      return navegar("/");
+      debugger;
+
+      await axios
+        .post("http://localhost:5001/logar", {
+          email: email,
+          senha: senha,
+        })
+        .then((res) => {
+          setRedirecionar("/Passeios");
+        })
+        .catch((error) => {
+          console.log(error);
+          e.preventDefault();
+        });
     }
   }
 
@@ -42,23 +62,42 @@ export default function LoginCadastro() {
       setAvisoCadastrarEmail("*O campo precisa ser preenchido ");
       setAvisoCadastrarSenha("*O campo precisa ser preenchido ");
       e.preventDefault();
-    } else if (nome === "" || cadastrarEmail === "" || cadastrarSenha === "") {
-      setAvisoCadastrarNome("*O campo precisa ser preenchido ");
-      setAvisoCadastrarEmail("*O campo precisa ser preenchido ");
-      setAvisoCadastrarSenha("*O campo precisa ser preenchido ");
-      e.preventDefault();
     } else if (cadastrarEmail === "") {
-      console.log("O campo email precisa esta preenchido");
+      setAvisoCadastrarEmail("*O campo precisa ser preenchido ");
       e.preventDefault();
       return;
     } else if (cadastrarSenha === "") {
-      console.log("O campo senha e precisa esta preenchido");
+      setAvisoCadastrarSenha("*O campo precisa ser preenchido ");
       e.preventDefault();
     } else if (nome === "") {
-      console.log("O campo nome presisa esta preencido");
+      setAvisoCadastrarNome("*O campo precisa ser preenchido ");
       e.preventDefault();
+      // } else if (nome !== "") {
+      //   setAvisoCadastrarSenha("*O campo precisa ser preenchido ");
+      //   setAvisoCadastrarEmail("*O campo precisa ser preenchido ");
+      //   e.preventDefault();
+      // } else if (email !== "") {
+      //   setAvisoCadastrarNome("*O campo precisa ser preenchido ");
+      //   setAvisoCadastrarSenha("*O campo precisa ser preenchido ");
+      //   e.preventDefault();
+      // } else if (senha !== "") {
+      //   setAvisoCadastrarNome("*O campo precisa ser preenchido ");
+      //   setAvisoCadastrarEmail("*O campo precisa ser preenchido ");
+      //   e.preventDefault();
     } else {
-      return navegar("/");
+      axios
+        .post("http://localhost:5001/registrar", {
+          nome: nome,
+          email: cadastrarEmail,
+          senha: cadastrarSenha,
+        })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((error) => {
+          console.log(error);
+          e.preventDefault();
+        });
     }
   }
 
@@ -84,9 +123,11 @@ export default function LoginCadastro() {
             <p className="description description-primary">
               Por favor faça login
             </p>
-            <button onClick={Signin} id="signin" className="btn btn-primary">
-              Entrar
-            </button>
+            <Link to={redirecionar}>
+              <button onClick={Signin} id="signin" className="btn btn-primary">
+                Entrar
+              </button>
+            </Link>
           </div>
           <div className="second-column">
             <h2 className="title title-second">Criar uma conta</h2>

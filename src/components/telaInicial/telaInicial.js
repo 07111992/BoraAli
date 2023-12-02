@@ -35,7 +35,7 @@ export default function TeleInicial() {
           <div className="frase_carousel">
             <h1 id="frase_1">
               <span>
-                Venha conhecer <span id="spanNone">o melhor do</span>
+                Venha conhecer <span id="spanNone">o melhor de</span>
               </span>
             </h1>
             <p id="frase_2">Recife</p>

@@ -6,76 +6,63 @@
     color: #202020
 }   */
 
-
 .tituloinicial {
-
-    text-align: center;
-    font-family: 'Francois One', sans-serif;
-    font-size:100px ;
-    margin-top: 10%;
-
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+  font-size: 100px;
+  margin-top: 10%;
 }
 
-
-
-
-.containercards{
-    margin-top: 80px;
-    margin-bottom: 100px;
-    display:flex;
-    flex-direction: row;
-     flex-wrap: wrap;
-     gap: 0px;
-      
-    width: 100%;
-    height: auto;
-   
+.containercards {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  width: 100%;
+  height: auto;
 }
 
+.card {
+  margin: 10px;
+  background-color: rgb (230, 230, 230);
+  width: 350px;
+  height: 480px;
 
-
-.card{
-    margin: 10px;
-    background-color: rgb (230,230,230);
-    width: 350px;
-    height: 480px;
-    
-    
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-   
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.card>h1 {
-    font-size:27px ;
-    padding-top: 3px;
-    font-family: 'Francois One', sans-serif;
+.card > h1 {
+  font-size: 27px;
+  padding-top: 3px;
+  font-family: "Francois One", sans-serif;
 }
 
-.card>p {
-    text-align:left;
-    font-size: 14px;
-    padding: 4px 4px;
-    font-family: Arial;
-    margin-bottom: 20px;
-    margin: 15px;
-    
+.card > p {
+  text-align: left;
+  font-size: 14px;
+  padding: 4px 4px;
+  font-family: Arial;
+  margin-bottom: 20px;
+  margin: 15px;
 }
 
-.card .btn{
-    font-size: 16px;
-    margin-top: 14px;
-    padding: 15px 14px;
-    background-color: rgb(77, 77, 225);
-    color:#fff;
-    cursor: pointer;
-    border-radius: 35px;
-    border-style: none;
-    align-items: center;
-    font-weight: 600;
-    transition: 0.5s background;
-    display: inline-block;
+.card .btn {
+  font-size: 16px;
+  margin-top: 14px;
+  padding: 15px 14px;
+  background-color: rgb(77, 77, 225);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 35px;
+  border-style: none;
+  align-items: center;
+  font-weight: 600;
+  transition: 0.5s background;
+  display: inline-block;
 }
 /* .btnporto {
     font-size: 16px;
@@ -93,55 +80,37 @@
     
 } */
 
-.btnb{ 
-   font-size: 16px;
-    margin-top: 30px;
-    padding: 15px 32px;
-    background-color: rgb(77, 77, 225);
-    color:#fff;
-    cursor: pointer;
-    border-radius: 35px;
-    border-style: none;
-    align-items: center;
-    font-weight: 600;
-    transition: 0.5s background;
-    display: inline-block;
-    margin-top: -7px;
-
-} 
-
-.btnb:hover{
-    transition: 0.5s background;
-    background-color: #333333;
-    color: white;
-    
+.btnb {
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 15px 32px;
+  background-color: rgb(77, 77, 225);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 35px;
+  border-style: none;
+  align-items: center;
+  font-weight: 600;
+  transition: 0.5s background;
+  display: inline-block;
+  margin-top: -7px;
 }
 
-.btn:hover{
-    transition: 0.5s background;
-    background-color: #333333;
-    color: white;
-    
+.btnb:hover {
+  transition: 0.5s background;
+  background-color: #333333;
+  color: white;
 }
 
-.card>img {
-    width: 100%;
-    height: 45%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
+.btn:hover {
+  transition: 0.5s background;
+  background-color: #333333;
+  color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card > img {
+  width: 100%;
+  height: 45%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
