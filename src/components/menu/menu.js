@@ -31,7 +31,7 @@ export default function Menu() {
           </li>
           <li>
             <Link id="botaoLogin" to="/LoginCadastro">
-              <span>Entar</span>
+              <span>Entrar</span>
             </Link>
           </li>
         </ul>

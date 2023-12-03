@@ -67,7 +67,7 @@ export default function Passeios() {
             inovação e tecnologia no país. Fundado em 2000, oferece um ambiente
             propício para empresas de TI, startups e instituições de pesquisa.
           </p>
-          <Link to="PasseiosDetalhes">
+          <Link to="DetalhesPorto_digital">
             <button className="btn">Saiba Mais!</button>
           </Link>
         </div>
@@ -82,7 +82,7 @@ export default function Passeios() {
             coleção de esculturas, azulejos, pinturas e outras peças criadas
             pelo artista.
           </p>
-          <Link to="PasseiosDetalhes">
+          <Link to="DetalhesMuseu_brennand">
             <button className="btnb">SAIBA MAIS!</button>
           </Link>
         </div>
@@ -96,7 +96,7 @@ export default function Passeios() {
             movimentação de cargas e passageiros. Sua localização privilegiada o
             torna um ponto chave para o comércio marítimo.
           </p>
-          <Link to="PasseiosDetalhes">
+          <Link to="DetalhesPorto_recife">
             <button className="btnb">SAIBA MAIS!</button>
           </Link>
         </div>
@@ -110,7 +110,7 @@ export default function Passeios() {
             belezas naturais. Para além do mar. O lugar oferece passeios
             variados, lojinhas ótimas para comprar artesanato,
           </p>
-          <Link to="PasseiosDetalhes">
+          <Link to="DetalhesPorto_galinhas">
             <button className="btnb">SAIBA MAIS!</button>
           </Link>
         </div>
@@ -124,7 +124,7 @@ export default function Passeios() {
             coração da cidade, oferece acesso a diversas manifestações
             culturais, como dança, música, teatro e artes visuais.
           </p>
-          <Link to="PasseiosDetalhes">
+          <Link to="DetalhesCaixa_cultural">
             <button className="btnb">SAIBA MAIS!</button>
           </Link>
         </div>
