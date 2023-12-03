@@ -14,7 +14,7 @@ export default function Passeios() {
     <div>
       {/* div contendo o titulo "Bora Ali" */}
 
-      <h1 className="tituloinicial">Bora Ali!</h1>
+      <h1 className="tituloinicial">"Recife, onde cada esquina é um palco de arte e tradição, convidando você a dançar na história."</h1>
 
       {/* main contendo toda os cards */}
 

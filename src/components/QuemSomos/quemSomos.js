@@ -12,6 +12,7 @@ export default function QuemSomos() {
   return (
     <main>
       <h1 className="equipeh1">Nossa Equipe</h1>
+      <h2>"No calor da cultura recifense, encontramos a motivação para enfrentar qualquer desafio."</h2>
 
       <div className="container_participantes">
         <div className="card_participantes" id="isis">

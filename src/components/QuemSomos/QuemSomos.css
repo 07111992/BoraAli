@@ -46,6 +46,8 @@ main {
 .equipeh1 {
   font-family: "Francois One", sans-serif;
   margin-top: 6%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #223d83;
 }
 
 .card_participantes p {
