@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import { Alert } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import "../LoginCadastro/LoginCadastro.css";
+import AlertDismissibleExample from "./alerta";
+import "../LoginCadastro/alerta.css";
 
 import iconFace from "../../img/iconFaceAzul.png";
 import iconGoogle from "../../img/iconGoogleAzul.png";
 import axios from "axios";
 import { async } from "q";
 
+//Funcao conecxao com o banco
 export default function LoginCadastro() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
@@ -16,45 +20,45 @@ export default function LoginCadastro() {
   // avisos
   const [avisoEmail, setAvisoEmail] = useState("");
   const [avisoSenha, setAvisoSenha] = useState("");
-
+  const [avisoUsuarioInvalido, setUsuarioInvalido] = useState("");
   const [avisoCadastrarNome, setAvisoCadastrarNome] = useState("");
   const [avisoCadastrarEmail, setAvisoCadastrarEmail] = useState("");
   const [avisoCadastrarSenha, setAvisoCadastrarSenha] = useState("");
+  const [showAlert, setShowAlert] = useState();
   const navegar = useNavigate();
 
-  const [redirecionar, setRedirecionar] = useState("");
+  const [resp, setResp] = useState([]);
 
-  // funcao para cadastrar
-  function cadastrarUsuario() {}
-
-  async function fazerLogin(e) {
+  // Funcao fazer login
+  function fazerLogin(e) {
     if (email === "" && senha === "") {
-      setAvisoEmail("*O e-mail precisa ser preenchido");
-      setAvisoSenha("*A senha precisa ser preenchida");
+      setAvisoEmail("O e-mail precisa ser preenchido");
+      setAvisoSenha("A senha precisa ser preenchida");
       e.preventDefault();
     } else if (email === "") {
-      setAvisoEmail("*O e-mail precisa ser preenchido");
+      setAvisoEmail("O e-mail precisa ser preenchido");
       e.preventDefault();
     } else if (senha === "") {
-      setAvisoSenha("*A senha precisa ser preenchida");
+      setAvisoSenha("A senha precisa ser preenchida");
       e.preventDefault();
     } else {
-      debugger;
-
-      await axios
-        .post("http://localhost:5001/logar", {
-          email: email,
-          senha: senha,
-        })
+      e.preventDefault();
+      axios
+        .post("http://localhost:5001/logar", { email: email, senha: senha })
         .then((res) => {
-          setRedirecionar("/Passeios");
+          setResp(res.data);
+          console.log(resp);
         })
         .catch((error) => {
-          console.log(error);
-          e.preventDefault();
+          return error;
         });
+      if (resp.length !== 0) {
+        navegar("/Passeios");
+      }
     }
   }
+
+  // funcao para cadastrar usuario
 
   function cadastrarUsuario(e) {
     if (nome === "" && cadastrarEmail === "" && cadastrarSenha === "") {
@@ -72,18 +76,6 @@ export default function LoginCadastro() {
     } else if (nome === "") {
       setAvisoCadastrarNome("*O campo precisa ser preenchido ");
       e.preventDefault();
-      // } else if (nome !== "") {
-      //   setAvisoCadastrarSenha("*O campo precisa ser preenchido ");
-      //   setAvisoCadastrarEmail("*O campo precisa ser preenchido ");
-      //   e.preventDefault();
-      // } else if (email !== "") {
-      //   setAvisoCadastrarNome("*O campo precisa ser preenchido ");
-      //   setAvisoCadastrarSenha("*O campo precisa ser preenchido ");
-      //   e.preventDefault();
-      // } else if (senha !== "") {
-      //   setAvisoCadastrarNome("*O campo precisa ser preenchido ");
-      //   setAvisoCadastrarEmail("*O campo precisa ser preenchido ");
-      //   e.preventDefault();
     } else {
       axios
         .post("http://localhost:5001/registrar", {
@@ -123,11 +115,9 @@ export default function LoginCadastro() {
             <p className="description description-primary">
               Por favor faça login
             </p>
-            <Link to={redirecionar}>
-              <button onClick={Signin} id="signin" className="btn btn-primary">
-                Entrar
-              </button>
-            </Link>
+            <button onClick={Signin} id="signin" className="btn btn-primary">
+              Entrar
+            </button>
           </div>
           <div className="second-column">
             <h2 className="title title-second">Criar uma conta</h2>
@@ -224,6 +214,7 @@ export default function LoginCadastro() {
               Ou use sua conta de e-mail:
             </p>
             <form className="form">
+              <span id="teste123">{avisoUsuarioInvalido}</span>
               <span id="teste123">{avisoEmail}</span>
               <label className="label-input" for="">
                 <i className="far fa-envelope icon-modify"></i>
