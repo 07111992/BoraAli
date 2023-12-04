@@ -1,6 +1,6 @@
 import "../PasseiosDetalhes/PasseiosDetalhes.css"
 import imgMarcoPage from "../../img/marco zero pagina.jpg";
-import imgMarcoPage2 from "../../img/marco-zero-recife main.gif";
+import imgMarcoPage2 from "../../img/imagemarco.png";
 import imgMarcoPage3 from "../../img/002_-_2021_d46af41fa57f.08.03-ensaio-casal-deyse-e-guto-marco-zero-recife-pe-fotografo-yanan-carapeto_.jpg";
 import imgMarcoPage4 from "../../img/antigo marco zero.jpg";
 export default function PasseiosDetalhes() {

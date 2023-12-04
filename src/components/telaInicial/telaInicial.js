@@ -3,8 +3,8 @@ import "../telaInicial/telaInicial.css";
 import { Link } from "react-router-dom";
 
 import imgCarousel1 from "../../img/babauuu.jpg";
-import imgCarousel2 from "../../img/aacopia.jpg";
-import imgCarousel3 from "../../img/marco-zero-6-scaled.jpeg";
+import imgCarousel2 from "../../img/Rua_do_Bom_Jesus,_Recife_antigocard.jpg";
+import imgCarousel3 from "../../img/pagina 5 imagem 3 brennand.jpg";
 
 import carangueijo from "../../img/caranguejo_1.png";
 import imgSol from "../../img/sol_1.png";

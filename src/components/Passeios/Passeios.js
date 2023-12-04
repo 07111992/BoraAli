@@ -6,7 +6,7 @@ import imgBomJesus from "../../img/Rua_do_Bom_Jesus,_Recife_antigocard.jpg";
 import imgPacoDofrevo from "../../img/paço do frevo card.jpg";
 import imgPortodigital from "../../img/portodigitalcard.png";
 import imgBrennand from "../../img/instituto-ricardo-brennand-foto-ed-machado-04 card.jpg";
-import imgPortoRecife from "../../img/Porto de Recifecard.jpg";
+import imgPortoRecife from "../../img/pagina 6 imagem para o card.jpg";
 import imgPortoGalinhas from "../../img/porto de galinhascard.webp";
 import imgCaixaCultural from "../../img/caixa-cultural-foto-ed-machado-01 card.jpg";
 export default function Passeios() {
