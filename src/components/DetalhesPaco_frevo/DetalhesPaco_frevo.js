@@ -1,4 +1,4 @@
-import "../PasseiosDetalhes2/PasseiosDetalhes2.css"
+import "../DetalhesBom_Jesus/DetalhesBom_Jesus.css"
 
 import imgpacoDofrevo from "../../img/pagina 3 imagem principal paço do frevo.jpg";
 import img2pacoDofrevo from "../../img/pagina 3 interno paço do frevo.webp";

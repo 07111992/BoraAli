@@ -27,7 +27,7 @@ export default function Passeios() {
             margens do Rio Capibaribe. Este marco é reconhecido como o centro
             geográfico da cidade e possui uma admirável rosa dos ventos no chão.
           </p>
-          <Link to="PasseiosDetalhes">
+          <Link to="DetalhesMarco_zero">
             <button className="btn">Saiba Mais!</button>
           </Link>
         </div>
@@ -40,7 +40,7 @@ export default function Passeios() {
             bonita do mundo. Conhecida por seu charme histórico, abriga diversos
             pontos históricos e arte, atraindo visitantes de todo o mundo.
           </p>
-          <Link to="PasseiosDetalhes2">
+          <Link to="DetalhesBom_Jesus">
             <button className="btn">Saiba Mais!</button>
           </Link>
         </div>
@@ -54,7 +54,7 @@ export default function Passeios() {
             tornou um ponto de referência para os admiradores e estudiosos desse
             patrimônio cultural.
           </p>
-          <Link to="PasseiosDetalhes3">
+          <Link to="DetalhesPaco_frevo">
             <button className="btn">Saiba Mais!</button>
           </Link>
         </div>

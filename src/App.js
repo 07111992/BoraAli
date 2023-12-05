@@ -7,9 +7,9 @@ import Footer from "./components/footer/footer";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import LoginCadastro from './components/LoginCadastro/LoginCadastro';
-import PasseiosDetalhes from './components/PasseiosDetalhes/PasseiosDetalhes'
-import PasseiosDetalhes2 from './components/PasseiosDetalhes2/PasseiosDetalhes2'
-import PasseiosDetalhes3 from './components/PasseiosDetalhes3/PasseiosDetalhes3'
+import DetalhesMarco_zero from './components/DetalhesMarco_zero/DetalhesMarco_zero'
+import DetalhesBom_Jesus from './components/DetalhesBom_Jesus/DetalhesBom_Jesus'
+import DetalhesPaco_frevo from './components/DetalhesPaco_frevo/DetalhesPaco_frevo'
 import DetalhesPorto_digital from './components/DetalhesPorto_digital/DetalhesPorto_digital'
 import DetalhesMuseu_brennand from './components/DetalhesMuseu_brennand/DetalhesMuseu_brennand'
 import DetalhesPorto_recife from './components/DetalhesPorto_recife/DetalhesPorto_recife'
@@ -24,9 +24,9 @@ function App() {
         <Route path='/Passeios' element={<Passeios />} />
         <Route path="/QuemSomos" element={<QuemSomos />} />
         <Route path="/LoginCadastro" element={<LoginCadastro />} />
-        <Route path="/Passeios/PasseiosDetalhes" element={<PasseiosDetalhes />} />
-        <Route path="/Passeios/PasseiosDetalhes2" element={<PasseiosDetalhes2 />} />
-        <Route path="/Passeios/PasseiosDetalhes3" element={<PasseiosDetalhes3 />} />
+        <Route path="/Passeios/DetalhesMarco_zero" element={<DetalhesMarco_zero />} />
+        <Route path="/Passeios/DetalhesBom_Jesus" element={<DetalhesBom_Jesus />} />
+        <Route path="/Passeios/DetalhesPaco_frevo" element={<DetalhesPaco_frevo />} />
         <Route path="/Passeios/DetalhesPorto_digital" element={<DetalhesPorto_digital />} />
         <Route path="/Passeios/DetalhesMuseu_brennand" element={<DetalhesMuseu_brennand />} />
         <Route path="/Passeios/DetalhesPorto_recife" element={<DetalhesPorto_recife />} />

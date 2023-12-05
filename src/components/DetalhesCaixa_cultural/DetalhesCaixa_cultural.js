@@ -1,3 +1,5 @@
+import "../DetalhesBom_Jesus/DetalhesBom_Jesus.css"
+
 import imgCaixaCultural from "../../img/pagina 8 imagem 1 caixa cultural.jpg"
 import img2CaixaCultural from "../../img/pagina 8 imagem 2 caixa cultural.webp"
 import img3CaixaCultural from "../../img/pagina 8 imagem 3 caixa cultural.jpg"

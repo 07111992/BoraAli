@@ -1,4 +1,5 @@
-import "../PasseiosDetalhes2/PasseiosDetalhes2.css"
+import "../DetalhesBom_Jesus/DetalhesBom_Jesus.css"
+
 import imgMuseuBrennand from "../../img/pagina 5 imagem 1 brennand.jpg"
 import img2MuseuBrennand from "../../img/pagina 5 imagem 2 brennand.jpg"
 import img3MuseuBrennad from "../../img/pagina 5 imagem 3 brennand.jpg"

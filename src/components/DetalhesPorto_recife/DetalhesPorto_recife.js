@@ -1,4 +1,4 @@
-import "../PasseiosDetalhes2/PasseiosDetalhes2.css"
+import "../DetalhesBom_Jesus/DetalhesBom_Jesus.css"
 import imgPortoRecife from "../../img/pagina 6 imagem 1 porto recife.jpg"
 import img2PortoRecife from "../../img/pagina 6 imagem 2 porto recife.jpeg"
 import img3PortoRecife from "../../img/pagina 6 imagem 3 porto recife.jpg"

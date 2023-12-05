@@ -1,4 +1,4 @@
-import "../PasseiosDetalhes2/PasseiosDetalhes2.css"
+import "../DetalhesBom_Jesus/DetalhesBom_Jesus.css"
 
 import imgBomJesusPage from "../../img/pagina passeios detalhes 2 rua_do_bom_jesus img topo.jpg";
 import img2BomJesusPage2 from "../../img/pagina passeios detalhes 2 recife-rua bom Jesus de noite1.jpg";
