@@ -14,7 +14,10 @@ export default function Passeios() {
     <div>
       {/* div contendo o titulo "Bora Ali" */}
 
-      <h1 className="tituloinicial">"Recife, onde cada esquina é um palco de arte e tradição, convidando você a dançar na história."</h1>
+      <h1 className="tituloinicial">
+        "Pernambuco, onde cada esquina é um palco de arte e tradição, convidando
+        você a dançar na história."
+      </h1>
 
       {/* main contendo toda os cards */}
 
@@ -22,7 +25,7 @@ export default function Passeios() {
         <div className="card">
           <img src={imgMarcoZero} alt="marco_zero" />
           <h1>Marco Zero</h1>
-          <p>
+          <p className="principal">
             Importante e presentativo ponto turístico da cidade, localizado às
             margens do Rio Capibaribe. Este marco é reconhecido como o centro
             geográfico da cidade e possui uma admirável rosa dos ventos no chão.

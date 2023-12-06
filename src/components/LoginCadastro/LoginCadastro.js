@@ -34,15 +34,11 @@ export default function LoginCadastro() {
     if (email === "" && senha === "") {
       setAvisoEmail("O e-mail precisa ser preenchido");
       setAvisoSenha("A senha precisa ser preenchida");
-      e.preventDefault();
     } else if (email === "") {
       setAvisoEmail("O e-mail precisa ser preenchido");
-      e.preventDefault();
     } else if (senha === "") {
       setAvisoSenha("A senha precisa ser preenchida");
-      e.preventDefault();
     } else {
-      e.preventDefault();
       axios
         .post("http://localhost:5001/logar", { email: email, senha: senha })
         .then((res) => {
@@ -56,6 +52,7 @@ export default function LoginCadastro() {
         navegar("/Passeios");
       }
     }
+    e.preventDefault();
   }
 
   // funcao para cadastrar usuario
@@ -105,148 +102,149 @@ export default function LoginCadastro() {
 
   return (
     <>
-      <div className="containerLogin">
-        <div className="content first-content">
-          <div className="first-column">
-            <h2 className="title title-primary">Bem vindo de volta!</h2>
-            <p className="description description-primary">
-              Para se manter conectado
-            </p>
-            <p className="description description-primary">
-              Por favor faça login
-            </p>
-            <button onClick={Signin} id="signin" className="btn btn-primary">
-              Entrar
-            </button>
-          </div>
-          <div className="second-column">
-            <h2 className="title title-second">Criar uma conta</h2>
-            <div className="social-media">
-              <ul className="list-social-media">
-                <Link className="link-social-media" href="">
-                  <li className="">
-                    <img id="iconGo" src={iconGoogle} alt="" />
-                    {/* <i className="fab fa-google-plus-g"></i> */}
-                  </li>
-                </Link>
-                <Link className="link-social-media" href="">
-                  <li className="">
-                    <img id="iconGo" src={iconFace} alt="" />
-                    {/* <i className="fab fa-google-plus-g"></i> */}
-                  </li>
-                </Link>
-              </ul>
-            </div>
-            <p className="description description-second">
-              Ou use seu e-mail para inscrição:
-            </p>
-            <form className="form">
-              <label className="label-input" for="">
-                <i className="far fa-user icon-modify"></i>
-                <input
-                  type="text"
-                  placeholder="Nome"
-                  onChange={(e) => {
-                    setNome(e.target.value);
-                  }}
-                />
-              </label>
-              <span id="teste123">{avisoCadastrarNome}</span>
-              <label className="label-input" for="">
-                <i className="far fa-envelope icon-modify"></i>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  onChange={(e) => {
-                    setCadastrarEmail(e.target.value);
-                  }}
-                />
-              </label>
-              <span id="teste123">{avisoCadastrarEmail}</span>
-              <label className="label-input" for="">
-                <i className="fas fa-lock icon-modify"></i>
-                <input
-                  type="password"
-                  placeholder="Senha"
-                  onChange={(e) => {
-                    setCadastrarSenha(e.target.value);
-                  }}
-                />
-              </label>
-              <span id="teste123">{avisoCadastrarSenha}</span>
-              <button onClick={cadastrarUsuario} className="btn btn-second">
-                Inscrever-se
-              </button>
-            </form>
-          </div>
-        </div>
-        <div className="content second-content">
-          <div className="first-column">
-            <h2 className="title title-primary">Olá amigo!</h2>
-            <p className="description description-primary">
-              Insira seus dados pessoais
-            </p>
-            <p className="description description-primary">
-              E comece a jornada conosco
-            </p>
-            <button onClick={Signup} id="signup" className="btn btn-primary">
-              Inscrever-se
-            </button>
-          </div>
-          <div className="second-column">
-            <h2 className="title title-second">Faça login</h2>
-            <div className="social-media">
-              <ul className="list-social-media">
-                <Link className="link-social-media" href="">
-                  <li className="">
-                    <img id="iconGo" src={iconGoogle} alt="" />
-                    {/* <i className="fab fa-google-plus-g"></i> */}
-                  </li>
-                </Link>
-                <Link className="link-social-media" href="">
-                  <li className="">
-                    <img id="iconGo" src={iconFace} alt="" />
-                  </li>
-                </Link>
-              </ul>
-            </div>
-            <p className="description description-second">
-              Ou use sua conta de e-mail:
-            </p>
-            <form className="form">
-              <span id="teste123">{avisoUsuarioInvalido}</span>
-              <span id="teste123">{avisoEmail}</span>
-              <label className="label-input" for="">
-                <i className="far fa-envelope icon-modify"></i>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
-                />
-              </label>
-              <span id="teste123">{avisoSenha}</span>
-              <label className="label-input" for="">
-                <i className="fas fa-lock icon-modify"></i>
-                <input
-                  type="password"
-                  placeholder="Senha"
-                  onChange={(e) => {
-                    setSenha(e.target.value);
-                  }}
-                />
-              </label>
-              <a className="password" href="#">
-                Esqueceu sua senha?
-              </a>
-              <button onClick={fazerLogin} className="btn btn-second">
+      <main className="mainGeral">
+        <div className="containerLogin">
+          <div className="content first-content">
+            <div className="first-column">
+              <h2 className="title title-primary">Bem vindo de volta!</h2>
+              <p className="description description-primary">
+                Para se manter conectado
+              </p>
+              <p className="description description-primary">
+                Por favor faça login
+              </p>
+              <button onClick={Signin} id="signin" className="btn btn-primary">
                 Entrar
               </button>
-            </form>
+            </div>
+            <div className="second-column">
+              <h2 className="title title-second">Criar uma conta</h2>
+              <div className="social-media">
+                <ul className="list-social-media">
+                  <Link className="link-social-media" href="">
+                    <li className="">
+                      {/* <img id="iconGo" src={iconGoogle} alt="" /> */}
+                      {/* <i className="fab fa-google-plus-g"></i> */}
+                    </li>
+                  </Link>
+                  <Link className="link-social-media" href="">
+                    <li className="">
+                      {/* <img id="iconGo" src={iconFace} alt="" /> */}
+                      {/* <i className="fab fa-google-plus-g"></i> */}
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+              <p className="description description-second">
+                Use seu e-mail para inscrição:
+              </p>
+              <form className="form">
+                <label className="label-input" for="">
+                  <i className="far fa-user icon-modify"></i>
+                  <input
+                    type="text"
+                    placeholder="Nome"
+                    onChange={(e) => {
+                      setNome(e.target.value);
+                    }}
+                  />
+                </label>
+                <span id="teste123">{avisoCadastrarNome}</span>
+                <label className="label-input" for="">
+                  <i className="far fa-envelope icon-modify"></i>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    onChange={(e) => {
+                      setCadastrarEmail(e.target.value);
+                    }}
+                  />
+                </label>
+                <span id="teste123">{avisoCadastrarEmail}</span>
+                <label className="label-input" for="">
+                  <i className="fas fa-lock icon-modify"></i>
+                  <input
+                    type="password"
+                    placeholder="Senha"
+                    onChange={(e) => {
+                      setCadastrarSenha(e.target.value);
+                    }}
+                  />
+                </label>
+                <span id="teste123">{avisoCadastrarSenha}</span>
+                <button onClick={cadastrarUsuario} className="btn btn-second">
+                  Inscrever-se
+                </button>
+              </form>
+            </div>
+          </div>
+          <div className="content second-content">
+            <div className="first-column">
+              <h2 className="title title-primary">Olá amigo!</h2>
+              <p className="description description-primary">
+                Insira seus dados pessoais
+              </p>
+              <p className="description description-primary">
+                E comece a jornada conosco
+              </p>
+              <button onClick={Signup} id="signup" className="btn btn-primary">
+                Inscrever-se
+              </button>
+            </div>
+            <div className="second-column">
+              <h2 className="title title-second">Faça login</h2>
+              <div className="social-media">
+                <ul className="list-social-media">
+                  <Link className="link-social-media" href="">
+                    <li className="">
+                      {/* <img id="iconGo" src={iconGoogle} alt="" /> */}
+                      {/* <i className="fab fa-google-plus-g"></i> */}
+                    </li>
+                  </Link>
+                  <Link className="link-social-media" href="">
+                    <li className="">
+                      {/* <img id="iconGo" src={iconFace} alt="" /> */}
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+              <p className="description description-second">
+                Use sua conta de e-mail:
+              </p>
+              <form className="form">
+                <span id="teste123">{avisoEmail}</span>
+                <label className="label-input" for="">
+                  <i className="far fa-envelope icon-modify"></i>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                  />
+                </label>
+                <span id="teste123">{avisoSenha}</span>
+                <label className="label-input" for="">
+                  <i className="fas fa-lock icon-modify"></i>
+                  <input
+                    type="password"
+                    placeholder="Senha"
+                    onChange={(e) => {
+                      setSenha(e.target.value);
+                    }}
+                  />
+                </label>
+                <a className="password" href="#">
+                  Esqueceu sua senha?
+                </a>
+                <button onClick={fazerLogin} className="btn btn-second">
+                  Entrar
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }
